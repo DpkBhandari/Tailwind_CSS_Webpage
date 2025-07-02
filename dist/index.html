@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- Fontawesome Cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom css File -->
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-slate-800 h-screen w-screen">
+    <nav
+      class="bg-slate-900 flex items-center justify-between h-16 w-screen text-white"
+    >
+      <section class="text-3xl font-extrabold m-4 hover:text-yellow-400">
+        Deep
+      </section>
+      <section id="bar" class="text-3xl mx-4 md:hidden l">
+        <i class="fa-solid fa-bars"></i>
+      </section>
+      <ul
+        id="nav-list"
+        class="hidden flex flex-col absolute top-16 bg-blue-400 font-medium m-2 text-white w-36 text-center gap-4 rounded-lg p-4 right-0 md:flex md:flex-row md:items-center md:p-4 md:right-0 md:top-0 md:mx-4 md:w-auto md:bg-transparent"
+      >
+        <li><a class="hover:text-yellow-400" href="#">Home</a></li>
+        <li><a class="hover:text-yellow-400" href="#">Projects</a></li>
+        <li><a class="hover:text-yellow-400" href="#">About</a></li>
+        <li><a class="hover:text-yellow-400" href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <script src="script.js"></script>
+  </body>
+</html>
