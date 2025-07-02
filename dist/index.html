@@ -16,8 +16,9 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body class="bg-slate-800 h-screen w-screen">
+    <!-- NavBar Staring From Here -->
     <nav
-      class="bg-slate-900 flex items-center justify-between h-16 w-screen text-white"
+      class="bg-slate-900 flex items-center fixed justify-between h-16 w-screen text-white"
     >
       <section class="text-3xl font-extrabold m-4 hover:text-yellow-400">
         Deep
@@ -27,14 +28,71 @@
       </section>
       <ul
         id="nav-list"
-        class="hidden flex flex-col absolute top-16 bg-blue-400 font-medium m-2 text-white w-36 text-center gap-4 rounded-lg p-4 right-0 md:flex md:flex-row md:items-center md:p-4 md:right-0 md:top-0 md:mx-4 md:w-auto md:bg-transparent"
+        class="hidden flex-col absolute top-16 bg-blue-400 font-medium m-2 text-white w-36 text-center gap-4 rounded-lg p-4 right-0 md:flex md:flex-row md:items-center md:p-4 md:right-0 md:top-0 md:mx-4 md:w-auto md:bg-transparent"
       >
-        <li><a class="hover:text-yellow-400" href="#">Home</a></li>
-        <li><a class="hover:text-yellow-400" href="#">Projects</a></li>
-        <li><a class="hover:text-yellow-400" href="#">About</a></li>
-        <li><a class="hover:text-yellow-400" href="#">Contact</a></li>
+        <li><a class="hover:text-yellow-400" href="#home">Home</a></li>
+        <li><a class="hover:text-yellow-400" href="#projects">Projects</a></li>
+        <li><a class="hover:text-yellow-400" href="#about">About</a></li>
+        <li><a class="hover:text-yellow-400" href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <!-- NavBar End Here -->
+
+    <!-- Main Staring From Here -->
+    <main
+      id="home"
+      class="flex flex-col items-center justify-around md:flex md:flex-row"
+    >
+      <section class="bg-slate-100 h-[80%] w-screen md:w-[60%]">
+        <h1 class="text-4xl mt-16 p-4 font-bold text-center">
+          "
+          <span class="text-red-700 font-bold"> "I Build What</span>
+          Users Feel."
+        </h1>
+        <p class="text-justify mt-8 p-8 leading-loose font-light tracking-wide">
+          "I'm Deepak Bhandari, a web developer passionate about crafting fast,
+          modern, and responsive user interfaces. I specialize in HTML, Tailwind
+          CSS, JavaScript, and React — building websites that don’t just work,
+          but connect. I believe great design is invisible and great code is
+          intentional. Whether it's a portfolio, landing page, or full web app,
+          I focus on both performance and user experience. Let's bring ideas to
+          life with clean code and creative energy."
+        </p>
+        <div
+          class="h-80 w-screen mt-4 flex flex-col items-center justify-evenly font-semibold md:flex-row md:gap-8"
+        >
+          <a
+            href="https://www.linkedin.com/in/deepak-bhandari-500467355/"
+            class="flex items-center justify-center text-white text-xl rounded-lg h-16 w-64 bg-black gap-6 hover:bg-[#0A66C2]"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin text-3xl"></i>LinkedIn
+          </a>
+
+          <a
+            href="https://github.com/DpkBhandari"
+            class="flex items-center justify-center text-white text-xl rounded-lg h-16 w-64 bg-black gap-6 mt-4 md:mt-0 hover:bg-gray-800"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github text-3xl"></i>GitHub
+          </a>
+        </div>
+      </section>
+      <section class="bg-slate-500 h-screen w-screen"></section>
+    </main>
+    <!-- Main End Here -->
+
+    <!-- Skills Staring From Here -->
+    <section id="skills" class="h-screen w-screen bg-black"></section>
+    <!-- Skills End Here -->
+
+    <!-- About Staring From Here -->
+    <section id="about" class="h-screen w-screen bg-red-300"></section>
+    <!-- About End Here -->
+
+    <!-- Contacts Staring From Here -->
+    <section id="contact" class="h-screen w-screen bg-yellow-100"></section>
+    <!-- Contacts End Here -->
 
     <script src="script.js"></script>
   </body>
