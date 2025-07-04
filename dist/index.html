@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <!-- Fontawesome Cdn -->
+
+    <!-- FontAwesome CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -12,88 +13,237 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Custom css File -->
+
+    <!-- Tailwind CSS Output -->
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="bg-slate-800 h-screen w-screen">
-    <!-- NavBar Staring From Here -->
+  <body
+    class="min-h-screen w-screen scroll-smooth selection:bg-slate-600 selection:text-white"
+  >
+    <!-- Navbar -->
     <nav
-      class="bg-slate-900 flex items-center fixed justify-between h-16 w-screen text-white"
+      class="bg-slate-900 flex items-center fixed top-0 justify-between h-16 w-screen text-white z-50"
     >
-      <section class="text-3xl font-extrabold m-4 hover:text-yellow-400">
+      <section class="text-3xl font-extrabold m-4 hover:text-red-400">
         Deep
       </section>
-      <section id="bar" class="text-3xl mx-4 md:hidden l">
+      <section id="bar" class="text-3xl mx-4 md:hidden">
         <i class="fa-solid fa-bars"></i>
       </section>
       <ul
         id="nav-list"
-        class="hidden flex-col absolute top-16 bg-blue-400 font-medium m-2 text-white w-36 text-center gap-4 rounded-lg p-4 right-0 md:flex md:flex-row md:items-center md:p-4 md:right-0 md:top-0 md:mx-4 md:w-auto md:bg-transparent"
+        class="hidden flex-col absolute top-16 bg-slate-900 font-medium m-2 text-white w-36 text-center rounded-lg p-4 right-0 md:flex md:flex-row md:items-center md:p-4 md:right-0 md:top-0 md:mx-4 md:w-auto md:bg-transparent"
       >
-        <li><a class="hover:text-yellow-400" href="#home">Home</a></li>
-        <li><a class="hover:text-yellow-400" href="#projects">Projects</a></li>
-        <li><a class="hover:text-yellow-400" href="#about">About</a></li>
-        <li><a class="hover:text-yellow-400" href="#contact">Contact</a></li>
+        <li><a class="hover:text-red-400" href="#home">Home</a></li>
+        <li><a class="hover:text-red-400" href="#skills">Skills</a></li>
+        <li><a class="hover:text-red-400" href="#about">About</a></li>
+        <li><a class="hover:text-red-400" href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <!-- NavBar End Here -->
 
-    <!-- Main Staring From Here -->
+    <!-- Main Section -->
     <main
       id="home"
-      class="flex flex-col items-center justify-around md:flex md:flex-row"
+      class="pt-16 flex flex-col md:flex-row items-center justify-start shadow-2xl w-screen md:h-screen"
     >
-      <section class="bg-slate-100 h-[80%] w-screen md:w-[60%]">
+      <!-- Left Content -->
+      <section class="h-full w-full md:w-[60%]">
         <h1 class="text-4xl mt-16 p-4 font-bold text-center">
-          "
-          <span class="text-red-700 font-bold"> "I Build What</span>
-          Users Feel."
+          <span class="text-red-800 font-bold">"I Build What</span> Users Feel."
         </h1>
-        <p class="text-justify mt-8 p-8 leading-loose font-light tracking-wide">
-          "I'm Deepak Bhandari, a web developer passionate about crafting fast,
+        <p
+          class="text-justify mt-8 p-16 leading-loose font-light tracking-wide md:font-normal"
+        >
+          I'm Deepak Bhandari, a web developer passionate about crafting fast,
           modern, and responsive user interfaces. I specialize in HTML, Tailwind
           CSS, JavaScript, and React — building websites that don’t just work,
           but connect. I believe great design is invisible and great code is
           intentional. Whether it's a portfolio, landing page, or full web app,
           I focus on both performance and user experience. Let's bring ideas to
-          life with clean code and creative energy."
+          life with clean code and creative energy.
         </p>
+
+        <!-- Social Buttons -->
         <div
-          class="h-80 w-screen mt-4 flex flex-col items-center justify-evenly font-semibold md:flex-row md:gap-8"
+          class="w-full flex flex-col items-center justify-center gap-4 md:flex-row md:gap-6 py-6"
         >
           <a
             href="https://www.linkedin.com/in/deepak-bhandari-500467355/"
-            class="flex items-center justify-center text-white text-xl rounded-lg h-16 w-64 bg-black gap-6 hover:bg-[#0A66C2]"
+            class="flex items-center justify-center text-white text-xl rounded-lg h-16 w-64 gap-6 mt-8 bg-black hover:bg-blue-900 hover:border-[1px] hover:border-black"
             target="_blank"
           >
-            <i class="fa-brands fa-linkedin text-3xl"></i>LinkedIn
+            <i class="fa-brands fa-linkedin text-3xl"></i>Linkedin
           </a>
 
           <a
             href="https://github.com/DpkBhandari"
-            class="flex items-center justify-center text-white text-xl rounded-lg h-16 w-64 bg-black gap-6 mt-4 md:mt-0 hover:bg-gray-800"
+            class="flex items-center justify-center text-white text-xl rounded-lg h-16 w-64 gap-6 mt-8 bg-red-500 hover:bg-blue-900 hover:border-[1px] hover:border-black"
             target="_blank"
           >
             <i class="fa-brands fa-github text-3xl"></i>GitHub
           </a>
         </div>
       </section>
-      <section class="bg-slate-500 h-screen w-screen"></section>
+
+      <!-- Right Content Placeholder -->
+      <section
+        class="h-screen md:h-[90%] w-full md:w-[40%] flex flex-col items-center justify-center p-8 md:border-l-4"
+      >
+        <img
+          src="../assets/deepakPortrait.jpg"
+          alt="DeepakPortrait"
+          srcset=""
+          class="md:h-[50%] md: w-[ 70%] items-center rounded-full"
+        />
+        <h1 class="font-black text-4xl mt-8 text-left text-shadow-lg">
+          Author : Deepak <span class="text-red-800">Bhandari</span>
+        </h1>
+        <p class="mt-8">
+          Studying
+          <abbr
+            title="Bachelor of Computer Applications"
+            class="font-bold no-underline border-none cursor-pointer"
+            >B C A</abbr
+          >
+          at
+          <a
+            href="https://www.tmv.edu.in/ "
+            class="font-normal border-b border-black"
+            >Tilak Maharashtra Vidyapeeth.</a
+          >
+        </p>
+        <p class="font-thin text-sm mt-4 italic">( From 2023 To Present )</p>
+
+        <a
+          href="#about"
+          class="flex items-center justify-center text-md p-4 gap-4 text-xl mt-12 text-center h-16 w-64 bg-black rounded-lg text-white hover:bg-white hover:text-black hover:border-[1px] hover:border-black"
+          >For More <i class="fa-solid fa-chevron-down shadow-lg"></i
+        ></a>
+      </section>
     </main>
-    <!-- Main End Here -->
 
-    <!-- Skills Staring From Here -->
-    <section id="skills" class="h-screen w-screen bg-black"></section>
-    <!-- Skills End Here -->
+    <!-- Skills Section -->
+    <section
+      id="skills"
+      class="h-full p-20 w-screen bg-white grid grid-cols-1 place-items-center md:grid-cols-2 gap-12 border-t"
+    >
+      <section
+        class="w-96 h-96 bg-white rounded-lg shadow-2xl hover:[box-shadow:0px_10px_20px_#1e3a8a]"
+      >
+        <h2 class="font-bold text-2xl md:text-3xl text-center p-8">
+          🧠 Front-End
+        </h2>
+        <p class="text-justify px-12 leading-loose font-light tracking-wide">
+          Building modern, fast, and responsive interfaces. Creating smooth,
+          interactive user experiences. Ensuring designs are clean and
+          user-friendly. Using the latest tools and frontend technologies.
+          Focused on both performance and aesthetics.
+        </p>
+      </section>
+      <section
+        class="w-96 h-96 bg-white rounded-lg shadow-2xl hover:[box-shadow:0_10px_20px_#1e3a8a]"
+      >
+        <h2 class="font-bold text-2xl md:text-3xl text-center p-8">
+          ⚙️ React UI
+        </h2>
+        <p class="text-justify px-12 leading-loose font-light tracking-wide">
+          Building fast and dynamic single-page applications. Using React to
+          create interactive UIs. Designing reusable, modular components.
+          Managing state efficiently and cleanly. Ensuring smooth performance
+          and scalability.
+        </p>
+      </section>
+      <section
+        class="w-96 h-96 bg-white rounded-lg shadow-2xl hover:[box-shadow:0_10px_20px_#1e3a8a]"
+      >
+        <h2 class="font-bold text-2xl md:text-3xl text-center p-8">
+          🌐 Version Control
+        </h2>
+        <p class="text-justify px-12 leading-loose font-light tracking-wide">
+          Managing code efficiently using Git. Tracking changes and maintaining
+          history. Collaborating on projects via GitHub. Handling branches,
+          merges, and pull requests. Supporting teamwork and open-source
+          contribution.
+        </p>
+      </section>
+      <section
+        class="w-96 h-96 bg-white rounded-lg shadow-2xl hover:[box-shadow:0_10px_20px_#7f1d1d]"
+      >
+        <h2 class="font-bold text-2xl text-center md:text-3xl p-8">
+          🚀 Solve & Optimize
+        </h2>
+        <p class="text-justify px-12 leading-loose font-light tracking-wide">
+          Solving real-world coding challenges with smart logic. Writing clean,
+          readable, and efficient code. Optimizing performance for speed and
+          scalability. Debugging issues and improving functionality. Always
+          focused on delivering quality code.
+        </p>
+      </section>
+    </section>
 
-    <!-- About Staring From Here -->
-    <section id="about" class="h-screen w-screen bg-red-300"></section>
-    <!-- About End Here -->
+    <!-- About Section -->
+    <section
+      id="about"
+      class="h-screen w-screen bg-pink-900 text-white flex flex-col items-center justify-center md:h-[80%] md:w-[80%]"
+    >
+      <h2 class="font-extrabold text-3xl text-left">Name : Deepak Bhandari</h2>
+      <p class="font-extralight text-md text-left">Pune Maharashtra - 411036</p>
+      <p class="font-extralight text-md p-8 text-justify">
+        I'm Deepak Bhandari, a passionate Front-End Developer skilled in HTML,
+        Tailwind CSS, JavaScript, and React. I enjoy building clean, responsive,
+        and user-friendly websites. Always eager to learn and solve real-world
+        problems through code.
+      </p>
+      <h3 class="font-bold text-2xl">🏫 Education</h3>
+      <p>
+        <span
+          ><abbr title="Secondary School Certificate (10th Standard) ">
+            SSC :
+          </abbr>
+        </span>
+        <a href="../assets/deepakPortrait.jpg" target="_blank">View Result</a>
+        <br />
+        <span
+          ><abbr title="Higher Secondary Certificate (12th Standard)"
+            >HSC <span>( Commerce )</span>:
+          </abbr>
+        </span>
+        <a href="../assets/deepakPortrait.jpg" target="_blank">View Result</a>
+      </p>
+      <h3>💡 Skills</h3>
 
-    <!-- Contacts Staring From Here -->
+      <p>
+        <a
+          href="https://www.instagram.com/mr.dpk.b/?next=%2F"
+          class="flex items-center justify-center text-white text-xl rounded-lg h-16 w-64 gap-6 mt-8 bg-red-500 hover:bg-blue-900 hover:border-[1px] hover:border-black"
+          target="_blank"
+          >Instagram</a
+        >
+        <a
+          href="https://wa.me/917083540396"
+          class="flex items-center justify-center text-white text-xl rounded-lg h-16 w-64 gap-6 mt-8 bg-red-500 hover:bg-blue-900 hover:border-[1px] hover:border-black"
+          target="_blank"
+          >Whatsapp</a
+        >
+        <a
+          href="https://www.instagram.com/mr.dpk.b/?next=%2F"
+          class="flex items-center justify-center text-white text-xl rounded-lg h-16 w-64 gap-6 mt-8 bg-red-500 hover:bg-blue-900 hover:border-[1px] hover:border-black"
+          target="_blank"
+          >Twitter</a
+        >
+        <a
+          href="https://wa.me/917083540396"
+          class="flex items-center justify-center text-white text-xl rounded-lg h-16 w-64 gap-6 mt-8 bg-red-500 hover:bg-blue-900 hover:border-[1px] hover:border-black"
+          target="_blank"
+          >Telegram</a
+        >
+      </p>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="h-screen w-screen bg-yellow-100"></section>
-    <!-- Contacts End Here -->
 
+    <!-- Script -->
     <script src="script.js"></script>
   </body>
 </html>
